@@ -1,0 +1,24 @@
+﻿<Window x:Class="Windows11Requirement.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:prism="http://prismlibrary.com/"
+        xmlns:local="clr-namespace:Windows11Requirement"
+        mc:Ignorable="d"
+        prism:ViewModelLocator.AutoWireViewModel="True"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <StackPanel>
+            <TextBlock Text="{Binding Os.Value}"/>
+            <TextBlock Text="{Binding Processor.Value}"/>
+            <TextBlock Text="{Binding Ram.Value}"/>
+            <TextBlock Text="{Binding Storage.Value}"/>
+            <TextBlock Text="{Binding Farmware.Value}"/>
+            <TextBlock Text="{Binding Tpm.Value}"/>
+            <TextBlock Text="{Binding GraphicsCard.Value}"/>
+            <TextBlock Text="{Binding Display.Value}"/>
+            <TextBlock Text="{Binding Internet.Value}"/>
+        </StackPanel>
+    </Grid>
+</Window>
